@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+body {
+    background-color: #f3f1f3;
+}
+
+header {
+    display: flex;
+    font-size: 2.5em;
+    height: 80px;
+    border-bottom: 2px solid #2abd67;
+}
+
+header p {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-type {
+    padding-left: 22px;
+    color: white;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+#add-project {
+    display: flex;
+    align-items: center;
+}
+
+.drawer-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+}
+
+.content {
+    display: flex;
+    align-content: stretch;
+}
+
+.drawer-icon:hover {
+    cursor: pointer;
+}
+
+.task {
+    margin: 33px;
+    background-color: #2abd67;
+    border-radius: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.side-bar > p {
+    border-bottom: 2px solid black;
+    font-size: 26px;
+    font-weight: 600;
+    color: #374958;
+}
+
+.side-bar * {
+    margin: 12px;
+    list-style: none;
+}
+
+.side-bar li {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.side-bar li:hover, #add-project:hover, .project-list:hover {
+    background-color: #f3f1f3;
+    cursor: pointer;
+}
+
+.side-bar {
+    background-color: white;
+    width: 300px;
+    min-height: 650px;
+    max-height: 100%;
+}
+
+.projects input {
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: #2abd67;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.projects input:hover {
+    cursor: pointer;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content{
+    display: grid;
+    grid-template-rows: auto 3fr;
+    grid-template-columns: 1fr;
+    flex-grow: 1;
+}
+
+.tasks{
+    padding-left: 3em;
+}
+
+.tasks div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.tasks div:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.tasks form{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.tasks form *{
+    font-size: 1.2em;
+}
+
+.tasks form{
+    width: 220px;
+}
+
+
+.tasks input[type="button"], .tasks input[type="submit"]{
+    padding: 8px 10px 8px 12px;
+    width: 120px;
+}
+
+.tasks input[type="button"]:hover, .tasks input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+.tasks div:not(.task-form) {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #374958;
+    border-radius: 2px;
+    font-size: 1.2em;
+    padding: 8px;
+}
+
+.tasks span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+}
+
+.checked{
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+}
