@@ -132,10 +132,6 @@ function sideBarSection() {
 }
 
 function displayAllTasks(taskContainer) {
-    // if (!projects && Object.keys(projects).length === 0) {
-    //     return;
-    // }
-
     // Iterate over each project and its tasks
     Object.keys(projects).forEach((projectName) => {
         projects[projectName].forEach((task) => {

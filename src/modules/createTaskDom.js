@@ -101,12 +101,6 @@ function setupTaskElement(task, taskTitle, title, date, removeBtn, star, checked
 
 // Update task state based on saved data
 function updateTaskState(projectName, taskTitle, star, title, checkedBtn) {
-    // const task = projects[projectName]?.find(t => t.title === taskTitle);
-    // if (!task) return;
-
-    // star.src = task.important ? filledStar : outlineStar;
-    // title.style.textDecorationLine = task.finished ? 'line-through' : 'none';
-    // checkedBtn.style.backgroundColor = task.finished ? 'black' : 'white';
     const project = projects[projectName];
 
     for (let i = 0; i < project.length; i++) {
