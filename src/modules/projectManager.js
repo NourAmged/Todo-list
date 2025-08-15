@@ -23,7 +23,6 @@ function addTask(projectName, title, date, important = 0, finished = 0) {
         projects[projectName].push({ title, date, important, finished });
         saveProjectsToLocalStorage(); // Save projects to localStorage
     }
-    console.log(projects);
     return projects;
 }
 
