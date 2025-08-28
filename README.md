@@ -15,6 +15,8 @@
 
 ![screenshot](./src/assets/images/Screenshot%202025-01-06%20223251.png)
 
+## [Live Demo](https://todo-list-six-alpha-55.vercel.app/)
+
 ## **Built With**
 
 - ![HTML5 logo](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
